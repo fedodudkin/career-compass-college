@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Заявка — IT Roadmap</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="glow-orb glow-1"></div>
+<div class="glow-orb glow-2"></div>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo"><span class="dot"></span>IT ROADMAP</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="about.html">О сервисе</a></li>
+    <li><a href="roadmap.html">Roadmap</a></li>
+    <li><a href="form.html">Заявка</a></li>
+  </ul>
+  <div class="nav-burger"><span></span><span></span><span></span></div>
+</nav>
+
+<main class="page">
+<div class="form-page">
+
+  <div class="section-label">Обратная связь</div>
+  <h1>Оставить заявку</h1>
+  <p class="subtitle">Предложение по улучшению, вопрос или хочешь добавить специальность — напиши нам.</p>
+
+  <div id="form-success" class="form-success"></div>
+
+  <form id="feedback-form" novalidate>
+
+    <div class="form-group">
+      <label class="form-label" for="name">Имя <span class="req">*</span></label>
+      <input class="form-input" type="text" id="name" placeholder="Иван Иванов" autocomplete="name">
+      <div class="form-error" id="name-error"></div>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="email">Email <span class="req">*</span></label>
+      <input class="form-input" type="email" id="email" placeholder="ivan@example.com" autocomplete="email">
+      <div class="form-error" id="email-error"></div>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="specialty">Специальность <span class="req">*</span></label>
+      <select class="form-select" id="specialty">
+        <option value="">— Выберите специальность —</option>
+        <option value="web">09.02.09 Веб-разработка</option>
+        <option value="gamedev">09.02.10 Разработка компьютерных игр, AR и VR</option>
+        <option value="ai">09.02.13 Интеграция решений с ИИ</option>
+        <option value="security">10.02.05 Информационная безопасность</option>
+        <option value="other">Другое</option>
+      </select>
+      <div class="form-error" id="specialty-error"></div>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="message">Сообщение <span class="req">*</span></label>
+      <textarea class="form-textarea" id="message" placeholder="Опишите ваш вопрос или предложение..."></textarea>
+      <div class="form-error" id="message-error"></div>
+      <div class="char-counter" id="char-count">0 / 500</div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:.5rem">
+      Отправить заявку →
+    </button>
+
+  </form>
+
+</div>
+</main>
+
+<footer style="border-top:1px solid var(--border)">
+  <div class="site-footer">
+    <span class="footer-text">© 2026 IT Roadmap — Курсовая работа</span>
+    <div class="footer-links">
+      <a href="about.html">О сервисе</a>
+      <a href="roadmap.html">Roadmap</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>

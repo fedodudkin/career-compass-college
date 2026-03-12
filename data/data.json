@@ -1,0 +1,96 @@
+{
+  "specialties": [
+    {
+      "id": "web",
+      "code": "09.02.09",
+      "title": "Веб-разработка",
+      "description": "Создание современных веб-приложений: от вёрстки до full-stack разработки",
+      "color": "#00d4ff",
+      "icon": "🌐",
+      "skills": [
+        { "id": "web-1", "title": "HTML5 & семантика", "category": "Основы", "description": "Структура страниц, семантические теги, формы, доступность" },
+        { "id": "web-2", "title": "CSS3 & Flexbox/Grid", "category": "Основы", "description": "Стилизация, адаптивная вёрстка, анимации, переменные" },
+        { "id": "web-3", "title": "JavaScript (ES6+)", "category": "Основы", "description": "Основы языка, DOM, события, асинхронность, fetch API" },
+        { "id": "web-4", "title": "Git & GitHub", "category": "Основы", "description": "Система контроля версий, ветки, pull request'ы" },
+        { "id": "web-5", "title": "Адаптивный дизайн", "category": "Вёрстка", "description": "Mobile-first подход, медиазапросы, viewport" },
+        { "id": "web-6", "title": "Препроцессоры CSS", "category": "Вёрстка", "description": "SASS/SCSS, переменные, миксины, вложенность" },
+        { "id": "web-7", "title": "React / Vue", "category": "Фреймворки", "description": "Компонентный подход, state management, хуки" },
+        { "id": "web-8", "title": "Node.js & Express", "category": "Backend", "description": "Серверная разработка, REST API, middleware" },
+        { "id": "web-9", "title": "Базы данных", "category": "Backend", "description": "SQL, PostgreSQL, MongoDB, ORM-библиотеки" },
+        { "id": "web-10", "title": "HTTP & REST API", "category": "Backend", "description": "Протоколы, методы, статус-коды, авторизация (JWT)" },
+        { "id": "web-11", "title": "Webpack & Vite", "category": "Инструменты", "description": "Сборка проекта, оптимизация, переменные окружения" },
+        { "id": "web-12", "title": "Тестирование", "category": "Продвинутое", "description": "Unit-тесты, Jest, Cypress, TDD-подход" },
+        { "id": "web-13", "title": "Docker & деплой", "category": "Продвинутое", "description": "Контейнеризация, CI/CD, Nginx, облачные платформы" },
+        { "id": "web-14", "title": "Web Security", "category": "Продвинутое", "description": "XSS, CSRF, CORS, HTTPS, OAuth 2.0" }
+      ]
+    },
+    {
+      "id": "gamedev",
+      "code": "09.02.10",
+      "title": "Разработка компьютерных игр, AR и VR",
+      "description": "Создание игр и иммерсивных приложений дополненной и виртуальной реальности",
+      "color": "#ff6b35",
+      "icon": "🎮",
+      "skills": [
+        { "id": "game-1", "title": "Основы программирования (C#)", "category": "Основы", "description": "Синтаксис, ООП, структуры данных, алгоритмы" },
+        { "id": "game-2", "title": "Unity — интерфейс и сцены", "category": "Основы", "description": "Редактор, иерархия объектов, Inspector, Asset Store" },
+        { "id": "game-3", "title": "GameObjects & Components", "category": "Основы", "description": "Компонентная архитектура, Transform, Rigidbody" },
+        { "id": "game-4", "title": "Физика в Unity", "category": "Механики", "description": "Коллайдеры, физические материалы, Raycast" },
+        { "id": "game-5", "title": "Анимации", "category": "Механики", "description": "Animator, State Machine, blend trees, Timeline" },
+        { "id": "game-6", "title": "UI/UX в играх", "category": "Механики", "description": "Canvas, HUD, меню, инвентарь, диалоги" },
+        { "id": "game-7", "title": "Звук и музыка", "category": "Механики", "description": "Audio Source, Audio Mixer, 3D-звук, FMOD" },
+        { "id": "game-8", "title": "Шейдеры и графика", "category": "Визуал", "description": "Shader Graph, материалы, постпроцессинг, VFX Graph" },
+        { "id": "game-9", "title": "AR-разработка", "category": "AR/VR", "description": "ARCore, ARKit, AR Foundation, маркерный трекинг" },
+        { "id": "game-10", "title": "VR-разработка", "category": "AR/VR", "description": "XR Interaction Toolkit, Oculus SDK, контроллеры" },
+        { "id": "game-11", "title": "Мультиплеер", "category": "Продвинутое", "description": "Netcode, Mirror, Photon, синхронизация состояния" },
+        { "id": "game-12", "title": "Оптимизация игр", "category": "Продвинутое", "description": "Profiler, батчинг, LOD, управление памятью" },
+        { "id": "game-13", "title": "Паттерны в геймдеве", "category": "Продвинутое", "description": "Observer, State Machine, ECS, Object Pool" }
+      ]
+    },
+    {
+      "id": "ai",
+      "code": "09.02.13",
+      "title": "Интеграция решений с ИИ",
+      "description": "Применение технологий искусственного интеллекта в реальных продуктах и системах",
+      "color": "#a855f7",
+      "icon": "🤖",
+      "skills": [
+        { "id": "ai-1", "title": "Python для ИИ", "category": "Основы", "description": "Синтаксис, NumPy, Pandas, работа с данными" },
+        { "id": "ai-2", "title": "Математика для ML", "category": "Основы", "description": "Линейная алгебра, статистика, теорвер, матанализ" },
+        { "id": "ai-3", "title": "Классическое ML", "category": "Машинное обучение", "description": "Scikit-learn, регрессия, классификация, кластеризация" },
+        { "id": "ai-4", "title": "Нейронные сети", "category": "Машинное обучение", "description": "Персептрон, CNN, RNN, принципы обратного распространения" },
+        { "id": "ai-5", "title": "TensorFlow / PyTorch", "category": "Машинное обучение", "description": "Фреймворки глубокого обучения, обучение моделей" },
+        { "id": "ai-6", "title": "NLP & LLM", "category": "Направления", "description": "Обработка текста, трансформеры, работа с OpenAI/HuggingFace API" },
+        { "id": "ai-7", "title": "Computer Vision", "category": "Направления", "description": "OpenCV, YOLO, сегментация, детекция объектов" },
+        { "id": "ai-8", "title": "MLOps", "category": "Интеграция", "description": "Docker, FastAPI для ML, мониторинг моделей, CI/CD" },
+        { "id": "ai-9", "title": "Работа с API ИИ-сервисов", "category": "Интеграция", "description": "OpenAI, Anthropic, Stability AI, интеграция в продукты" },
+        { "id": "ai-10", "title": "Базы данных для ИИ", "category": "Интеграция", "description": "Векторные БД, Pinecone, Weaviate, embeddings" },
+        { "id": "ai-11", "title": "Этика и безопасность ИИ", "category": "Продвинутое", "description": "Bias, fairness, explainability, регулирование ИИ" },
+        { "id": "ai-12", "title": "Fine-tuning моделей", "category": "Продвинутое", "description": "LoRA, PEFT, дообучение под задачи бизнеса" }
+      ]
+    },
+    {
+      "id": "security",
+      "code": "10.02.05",
+      "title": "Информационная безопасность",
+      "description": "Защита автоматизированных систем, анализ угроз и обеспечение кибербезопасности",
+      "color": "#22c55e",
+      "icon": "🔐",
+      "skills": [
+        { "id": "sec-1", "title": "Основы сетей", "category": "Основы", "description": "Модель OSI, TCP/IP, DNS, HTTP, маршрутизация" },
+        { "id": "sec-2", "title": "Операционные системы", "category": "Основы", "description": "Linux и Windows: администрирование, права, процессы" },
+        { "id": "sec-3", "title": "Криптография", "category": "Основы", "description": "Симметричное/асимметричное шифрование, хэширование, PKI" },
+        { "id": "sec-4", "title": "Анализ уязвимостей", "category": "Атака и защита", "description": "OWASP Top 10, CVE, сканеры Nmap, Nessus" },
+        { "id": "sec-5", "title": "Пентестинг", "category": "Атака и защита", "description": "Методологии, Kali Linux, Metasploit, этичный хакинг" },
+        { "id": "sec-6", "title": "Веб-безопасность", "category": "Атака и защита", "description": "SQL Injection, XSS, CSRF, Burp Suite" },
+        { "id": "sec-7", "title": "Сетевая безопасность", "category": "Защита", "description": "Firewall, IDS/IPS, VPN, сегментация сети" },
+        { "id": "sec-8", "title": "SIEM & мониторинг", "category": "Защита", "description": "Splunk, ELK Stack, анализ логов, реагирование на инциденты" },
+        { "id": "sec-9", "title": "Защита ОС и хостов", "category": "Защита", "description": "Hardening, антивирусы, EDR, политики безопасности" },
+        { "id": "sec-10", "title": "Форензика", "category": "Расследование", "description": "Цифровая криминалистика, анализ артефактов, восстановление данных" },
+        { "id": "sec-11", "title": "Нормативная база", "category": "Расследование", "description": "ФСТЭК, ФСБ, 152-ФЗ, ISO 27001, GDPR" },
+        { "id": "sec-12", "title": "SOC & Blue Team", "category": "Продвинутое", "description": "Центр мониторинга безопасности, threat hunting, playbooks" },
+        { "id": "sec-13", "title": "Red Team & APT", "category": "Продвинутое", "description": "Продвинутые атаки, lateral movement, persistence" }
+      ]
+    }
+  ]
+}

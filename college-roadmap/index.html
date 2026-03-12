@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Roadmap — Специальности колледжа</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="glow-orb glow-1"></div>
+<div class="glow-orb glow-2"></div>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <span class="dot"></span>IT ROADMAP
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="about.html">О сервисе</a></li>
+    <li><a href="roadmap.html">Roadmap</a></li>
+    <li><a href="form.html">Заявка</a></li>
+  </ul>
+  <div class="nav-burger" aria-label="Меню">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<main class="page">
+
+  <section class="hero">
+    <div class="hero-badge">🎓 Колледж &nbsp;·&nbsp; 4 специальности &nbsp;·&nbsp; IT</div>
+    <h1>Твой путь в<br><span class="accent">IT-профессию</span></h1>
+    <p class="hero-desc">Интерактивные дорожные карты по специальностям. Изучай навыки, отмечай прогресс, строй карьеру.</p>
+    <div class="hero-cta">
+      <a href="roadmap.html" class="btn btn-primary">Смотреть Roadmap →</a>
+      <a href="about.html" class="btn btn-outline">О сервисе</a>
+    </div>
+  </section>
+
+  <div class="stats-row">
+    <div class="stat-item">
+      <span class="stat-value">4</span>
+      <span class="stat-label">специальности</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value" id="stat-total">52</span>
+      <span class="stat-label">навыков</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value" id="stat-done">0</span>
+      <span class="stat-label">пройдено вами</span>
+    </div>
+  </div>
+
+  <div id="specialties-grid" class="specialties-grid">
+    <!-- rendered by index.js -->
+  </div>
+
+</main>
+
+<footer style="border-top:1px solid var(--border)">
+  <div class="site-footer">
+    <span class="footer-text">© 2026 IT Roadmap — Курсовая работа</span>
+    <div class="footer-links">
+      <a href="about.html">О сервисе</a>
+      <a href="form.html">Обратная связь</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
