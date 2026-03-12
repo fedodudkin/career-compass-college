@@ -1,15 +1,15 @@
-// ── Load data & render roadmap ────────────────────────────────
+// ── Загрузка данных и отрисовка дорожной карты ────────────────────────────────
 let allData = null;
 let activeFilter = 'all';
 
 async function loadData() {
-  const res = await fetch('data/data.json');
+  const res = await fetch('/data/data.json');
   allData = await res.json();
   renderAll();
   updateGlobalStats();
 }
 
-// ── LocalStorage helpers ──────────────────────────────────────
+// ── Вспомогательные функции для LocalStorage ──────────────────────────────────────
 function getDoneSkills() {
   return JSON.parse(localStorage.getItem('roadmap_done') || '{}');
 }
@@ -20,7 +20,7 @@ function toggleSkill(id) {
   return done;
 }
 
-// ── Render ────────────────────────────────────────────────────
+// ── Отрисовка интерфейса ────────────────────────────────────────────────────
 function renderAll() {
   const content = document.getElementById('roadmap-content');
   if (!content) return;
@@ -82,7 +82,7 @@ function toggleSection(specId) {
   renderAll();
 }
 
-// ── Filters ───────────────────────────────────────────────────
+// ── Фильтры специальностей ───────────────────────────────────────────────────
 function initFilters() {
   if (!allData) return;
   const bar = document.getElementById('filter-bar');
@@ -102,7 +102,7 @@ function setFilter(id) {
   renderAll();
 }
 
-// ── Global stats ──────────────────────────────────────────────
+// ── Обновление глобальной статистики ──────────────────────────────────────────────
 function updateGlobalStats() {
   if (!allData) return;
   const done = getDoneSkills();
@@ -117,10 +117,10 @@ function updateGlobalStats() {
   if (pctEl) pctEl.textContent = pct + '%';
 }
 
-// ── Update home page cards (called from roadmap when data syncs)
+// ── Обновление карточек главной страницы (вызывается из roadmap при синхронизации данных)
 function updateHomeCards() {}
 
-// ── Init ──────────────────────────────────────────────────────
+// ── Инициализация ──────────────────────────────────────────────────────
 loadData().then(() => {
   initFilters();
 });

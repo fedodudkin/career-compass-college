@@ -1,4 +1,4 @@
-// ── Form validation & submission ──────────────────────────────
+// ── Валидация формы и отправка данных ──────────────────────────────
 const form = document.getElementById('feedback-form');
 if (!form) throw new Error('Form not found');
 
@@ -12,7 +12,7 @@ const successMsg = document.getElementById('form-success');
 const charCounter = document.getElementById('char-count');
 const MAX_MSG = 500;
 
-// ── Real-time validation ──────────────────────────────────────
+// ── Валидация в реальном времени ──────────────────────────────────────
 function showError(field, msg) {
   fields[field].el.classList.add('error');
   fields[field].err.textContent = msg;
@@ -53,7 +53,7 @@ Object.keys(fields).forEach(name => {
   });
 });
 
-// ── Char counter ──────────────────────────────────────────────
+// ── Счётчик символов ──────────────────────────────────────────────
 if (fields.message.el && charCounter) {
   fields.message.el.addEventListener('input', () => {
     const len = fields.message.el.value.length;
@@ -63,7 +63,7 @@ if (fields.message.el && charCounter) {
   });
 }
 
-// ── Submit ────────────────────────────────────────────────────
+// ── Отправка формы ────────────────────────────────────────────────────
 form.addEventListener('submit', e => {
   e.preventDefault();
   let valid = true;
@@ -78,7 +78,7 @@ form.addEventListener('submit', e => {
 
   if (!valid) return;
 
-  // Save to localStorage
+  // Сохранение в localStorage
   const submissions = JSON.parse(localStorage.getItem('form_submissions') || '[]');
   submissions.push({
     id: Date.now(),
@@ -90,7 +90,7 @@ form.addEventListener('submit', e => {
   });
   localStorage.setItem('form_submissions', JSON.stringify(submissions));
 
-  // Show success
+  // Показать сообщение об успехе
   successMsg.textContent = `✓ Спасибо, ${fields.name.el.value.trim()}! Ваша заявка принята.`;
   successMsg.classList.add('show');
   form.reset();

@@ -1,6 +1,6 @@
-// ── Home page: load specialties and render cards ──────────────
+// ── Главная страница: загрузка специальностей и отрисовка карточек ──────────────
 async function initHome() {
-  const res = await fetch('data/data.json');
+  const res = await fetch('/data/data.json');
   const data = await res.json();
   const done = JSON.parse(localStorage.getItem('roadmap_done') || '{}');
 
