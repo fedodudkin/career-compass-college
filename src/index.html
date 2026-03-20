@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IT Roadmap — Специальности колледжа</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -15,21 +15,21 @@
   <a href="index.html" class="nav-logo">
     <span class="dot"></span>IT ROADMAP
   </a>
-  <ul class="nav-links">
+  <ul class="nav-links" id="primary-navigation">
     <li><a href="index.html">Главная</a></li>
     <li><a href="about.html">О сервисе</a></li>
     <li><a href="roadmap.html">Roadmap</a></li>
     <li><a href="form.html">Заявка</a></li>
   </ul>
-  <div class="nav-burger" aria-label="Меню">
+  <button class="nav-burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="primary-navigation">
     <span></span><span></span><span></span>
-  </div>
+  </button>
 </nav>
 
 <main class="page">
 
-  <section class="hero">
-    <div class="hero-badge">🎓 Колледж &nbsp;·&nbsp; 4 специальности &nbsp;·&nbsp; IT</div>
+  <section class="hero animate-on-reveal">
+    <div class="hero-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" style="display:inline-block;vertical-align:middle;margin-right:2px"><path d="M12 3L2 8l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M2 8v6M6 10.5v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> Колледж &nbsp;·&nbsp; 4 специальности &nbsp;·&nbsp; IT</div>
     <h1>Твой путь в<br><span class="accent">IT-профессию</span></h1>
     <p class="hero-desc">Интерактивные дорожные карты по специальностям. Изучай навыки, отмечай прогресс, строй карьеру.</p>
     <div class="hero-cta">
@@ -38,7 +38,7 @@
     </div>
   </section>
 
-  <div class="stats-row">
+  <div class="stats-row animate-on-reveal" style="--reveal-delay:100ms">
     <div class="stat-item">
       <span class="stat-value">4</span>
       <span class="stat-label">специальности</span>
@@ -54,12 +54,12 @@
   </div>
 
   <div id="specialties-grid" class="specialties-grid">
-    <!-- Сгенерировано скриптом index.js -->
+    <!-- rendered by index.js -->
   </div>
 
 </main>
 
-<footer style="border-top:1px solid var(--border)">
+<footer>
   <div class="site-footer">
     <span class="footer-text">© 2026 IT Roadmap — Курсовая работа</span>
     <div class="footer-links">
@@ -69,7 +69,7 @@
   </div>
 </footer>
 
-<script src="/js/main.js"></script>
-<script src="/js/index.js"></script>
+<script type="module" src="js/main.js"></script>
+<script type="module" src="js/index.js"></script>
 </body>
 </html>

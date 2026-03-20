@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>О сервисе — IT Roadmap</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -13,18 +13,29 @@
 
 <nav class="navbar">
   <a href="index.html" class="nav-logo"><span class="dot"></span>IT ROADMAP</a>
-  <ul class="nav-links">
+  <ul class="nav-links" id="primary-navigation">
     <li><a href="index.html">Главная</a></li>
     <li><a href="about.html">О сервисе</a></li>
     <li><a href="roadmap.html">Roadmap</a></li>
     <li><a href="form.html">Заявка</a></li>
   </ul>
-  <div class="nav-burger"><span></span><span></span><span></span></div>
+  <button class="nav-burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="primary-navigation"><span></span><span></span><span></span></button>
+</nav>
+
+<nav class="breadcrumb" aria-label="Навигация">
+  <a href="index.html" class="breadcrumb-link">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M3 12L12 3l9 9M5 10v9a1 1 0 001 1h4v-5h4v5h4a1 1 0 001-1v-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    Главная
+  </a>
+  <span class="breadcrumb-sep" aria-hidden="true">/</span>
+  <span class="breadcrumb-current" aria-current="page">О сервисе</span>
 </nav>
 
 <main class="page">
 
-  <div class="about-hero">
+  <div class="about-hero animate-on-reveal">
     <div class="section-label">О проекте</div>
     <h1>Зачем нужен IT Roadmap?</h1>
     <p>Сервис помогает студентам IT-специальностей понять, какие навыки нужно освоить, отслеживать свой прогресс и не теряться в огромном количестве тем и технологий.</p>
@@ -32,38 +43,38 @@
 
   <div class="about-cards">
 
-    <div class="about-card fade-up">
-      <div class="about-card-icon">🗺️</div>
+    <div class="about-card animate-on-reveal">
+      <div class="about-card-icon"><img src="img/icons8-map-48.png" alt="Карта" class="about-icon-img"></div>
       <h3>Структурированный путь</h3>
       <p>Каждая специальность разбита на темы и навыки — от базовых до продвинутых. Никаких пустых списков, только конкретные технологии с описаниями.</p>
     </div>
 
-    <div class="about-card fade-up">
-      <div class="about-card-icon">✅</div>
+    <div class="about-card animate-on-reveal">
+      <div class="about-card-icon"><img src="img/icons8-in-progress-48.png" alt="Прогресс" class="about-icon-img"></div>
       <h3>Отслеживание прогресса</h3>
       <p>Отмечай пройденные темы кликом. Прогресс сохраняется в браузере — можно вернуться в любой момент и продолжить с того места, где остановился.</p>
     </div>
 
-    <div class="about-card fade-up">
-      <div class="about-card-icon">🎯</div>
+    <div class="about-card animate-on-reveal">
+      <div class="about-card-icon"><img src="img/icons8-tree-structure-48.png" alt="Цель" class="about-icon-img"></div>
       <h3>4 специальности</h3>
       <p>Веб-разработка, разработка игр и AR/VR, интеграция ИИ, информационная безопасность. Каждая со своим набором ключевых компетенций.</p>
     </div>
 
-    <div class="about-card fade-up">
-      <div class="about-card-icon">📱</div>
+    <div class="about-card animate-on-reveal">
+      <div class="about-card-icon"><img src="img/icons8-multiple-devices-48.png" alt="Смартфон" class="about-icon-img"></div>
       <h3>Адаптивный интерфейс</h3>
       <p>Сервис одинаково удобен на ноутбуке, планшете и телефоне. Вёрстка адаптируется под любой экран.</p>
     </div>
 
-    <div class="about-card fade-up">
-      <div class="about-card-icon">🔒</div>
+    <div class="about-card animate-on-reveal">
+      <div class="about-card-icon"><img src="img/icons8-privacy-48.png" alt="Приватность" class="about-icon-img"></div>
       <h3>Приватность</h3>
       <p>Все данные о прогрессе хранятся только в вашем браузере (LocalStorage). Никаких серверов, никакой регистрации.</p>
     </div>
 
-    <div class="about-card fade-up">
-      <div class="about-card-icon">💬</div>
+    <div class="about-card animate-on-reveal">
+      <div class="about-card-icon"><img src="img/icons8-feedback-48.png" alt="Обратная связь" class="about-icon-img"></div>
       <h3>Обратная связь</h3>
       <p>Есть предложения по улучшению или хочешь добавить специальность? Оставь заявку через форму — мы учтём каждое мнение.</p>
     </div>
@@ -72,7 +83,7 @@
 
 </main>
 
-<footer style="border-top:1px solid var(--border)">
+<footer>
   <div class="site-footer">
     <span class="footer-text">© 2026 IT Roadmap — Курсовая работа</span>
     <div class="footer-links">
@@ -82,6 +93,7 @@
   </div>
 </footer>
 
-<script src="/js/main.js"></script>
+<script type="module" src="js/main.js"></script>
+
 </body>
 </html>

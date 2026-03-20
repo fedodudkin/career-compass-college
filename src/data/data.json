@@ -1,0 +1,1256 @@
+{
+  "specialties": [
+    {
+      "id": "web",
+      "code": "09.02.09",
+      "title": "Веб-разработка",
+      "description": "Создание современных веб-приложений: от вёрстки до full-stack разработки",
+      "color": "#00d4ff",
+      "icon": "img/icons8-web-development-48.png",
+      "skills": [
+        {
+          "id": "web-1",
+          "title": "HTML5 & семантика",
+          "category": "Основы",
+          "description": "Структура страниц, семантические теги, формы, доступность",
+          "topics": [
+            "Структура HTML-документа: DOCTYPE, head, body",
+            "Семантические теги: header, nav, main, section, article, footer",
+            "Формы: input, textarea, select, типы полей, атрибуты валидации",
+            "Медиаэлементы: img, video, audio, figure",
+            "Таблицы: thead, tbody, colspan, rowspan",
+            "Мета-теги: charset, viewport, description, og-теги",
+            "Доступность: aria-атрибуты, роли, alt-текст",
+            "Ссылки и якоря, атрибут target",
+            "Блочные и строчные элементы — отличия",
+            "HTML5 API: localStorage, Geolocation, Canvas"
+          ]
+        },
+        {
+          "id": "web-2",
+          "title": "CSS3 & Flexbox/Grid",
+          "category": "Основы",
+          "description": "Стилизация, адаптивная вёрстка, анимации, переменные",
+          "topics": [
+            "Селекторы: классы, id, псевдоклассы, псевдоэлементы",
+            "Блочная модель: margin, padding, border, box-sizing",
+            "Позиционирование: static, relative, absolute, fixed, sticky",
+            "Flexbox: flex-direction, justify-content, align-items, flex-wrap",
+            "CSS Grid: grid-template, grid-area, gap, авторазмещение",
+            "CSS-переменные (custom properties): --var, var()",
+            "Анимации: transition, @keyframes, animation",
+            "Медиазапросы: @media, breakpoints, mobile-first",
+            "Псевдоэлементы ::before и ::after",
+            "Единицы измерения: px, em, rem, vw, vh, %"
+          ]
+        },
+        {
+          "id": "web-3",
+          "title": "JavaScript (ES6+)",
+          "category": "Основы",
+          "description": "Основы языка, DOM, события, асинхронность, fetch API",
+          "topics": [
+            "Переменные: let, const, var — отличия и области видимости",
+            "Типы данных, typeof, приведение типов",
+            "Функции: обычные, стрелочные, IIFE, замыкания",
+            "Массивы: map, filter, reduce, forEach, find, spread",
+            "Объекты: деструктуризация, spread, Object.keys/values",
+            "DOM: querySelector, createElement, innerHTML, classList",
+            "События: addEventListener, делегирование, event.target",
+            "Промисы: Promise, .then/.catch, async/await",
+            "Fetch API: GET/POST запросы, обработка JSON",
+            "Модули ES6: import, export, динамический импорт"
+          ]
+        },
+        {
+          "id": "web-4",
+          "title": "Git & GitHub",
+          "category": "Основы",
+          "description": "Система контроля версий, ветки, pull request'ы",
+          "topics": [
+            "Инициализация репозитория: git init, git clone",
+            "Основной цикл: add, commit, push, pull",
+            "Ветки: git branch, checkout, merge, rebase",
+            "Работа с удалённым репозиторием: remote, fetch, origin",
+            "Разрешение конфликтов при слиянии",
+            "Git log, diff, stash — просмотр истории и изменений",
+            ".gitignore — исключение файлов из отслеживания",
+            "GitHub: pull request, code review, issues",
+            "GitHub Pages — бесплатный хостинг статических сайтов",
+            "Теги и версионирование: git tag, semantic versioning"
+          ]
+        },
+        {
+          "id": "web-5",
+          "title": "Адаптивный дизайн",
+          "category": "Вёрстка",
+          "description": "Mobile-first подход, медиазапросы, viewport",
+          "topics": [
+            "Mobile-first vs Desktop-first: отличия подходов",
+            "Мета-тег viewport и его параметры",
+            "Медиазапросы: min-width, max-width, ориентация экрана",
+            "Стандартные брейкпоинты: 480, 768, 1024, 1280px",
+            "Гибкие единицы: %, vw, vh, clamp()",
+            "Адаптивные изображения: srcset, sizes, picture",
+            "Fluid typography — масштабируемый текст",
+            "Адаптивные таблицы и карточки",
+            "Тестирование в DevTools: режим устройств",
+            "Принципы touch-friendly интерфейса"
+          ]
+        },
+        {
+          "id": "web-6",
+          "title": "Препроцессоры CSS",
+          "category": "Вёрстка",
+          "description": "SASS/SCSS, переменные, миксины, вложенность",
+          "topics": [
+            "Установка и компиляция SCSS",
+            "Переменные $var и их отличие от CSS custom properties",
+            "Вложенность селекторов и символ &",
+            "Миксины: @mixin, @include, аргументы",
+            "Наследование: @extend, %placeholder",
+            "Функции: lighten, darken, mix, math-функции",
+            "Импорт и разбивка стилей на файлы: @use, @forward",
+            "Циклы и условия: @each, @for, @if",
+            "BEM-методология в связке с SCSS",
+            "Настройка автокомпиляции в VS Code"
+          ]
+        },
+        {
+          "id": "web-7",
+          "title": "React / Vue",
+          "category": "Фреймворки",
+          "description": "Компонентный подход, state management, хуки",
+          "topics": [
+            "Компонентная архитектура: разбивка UI на компоненты",
+            "JSX / шаблоны Vue — синтаксис и ограничения",
+            "Props: передача данных от родителя к потомку",
+            "State: useState (React) / ref, reactive (Vue)",
+            "Хуки React: useEffect, useContext, useRef, useMemo",
+            "Жизненный цикл компонента",
+            "Роутинг: React Router / Vue Router",
+            "Глобальное состояние: Context API, Zustand / Pinia",
+            "Работа с формами: controlled components, валидация",
+            "Оптимизация: memo, lazy loading, виртуализация списков"
+          ]
+        },
+        {
+          "id": "web-8",
+          "title": "Node.js & Express",
+          "category": "Backend",
+          "description": "Серверная разработка, REST API, middleware",
+          "topics": [
+            "Node.js: event loop, модульная система, npm",
+            "Встроенные модули: fs, path, http, os",
+            "Express: создание сервера, маршруты, методы HTTP",
+            "Middleware: morgan, cors, body-parser, custom",
+            "Работа с параметрами: req.params, req.query, req.body",
+            "Обработка ошибок: error middleware, статус-коды",
+            "Работа с файлами: multer, statические файлы",
+            "Переменные окружения: dotenv, process.env",
+            "Структура проекта: MVC-паттерн",
+            "Деплой: Railway, Render, Heroku"
+          ]
+        },
+        {
+          "id": "web-9",
+          "title": "Базы данных",
+          "category": "Backend",
+          "description": "SQL, PostgreSQL, MongoDB, ORM-библиотеки",
+          "topics": [
+            "Реляционные БД: таблицы, первичные и внешние ключи",
+            "SQL: SELECT, INSERT, UPDATE, DELETE, JOIN",
+            "PostgreSQL: установка, psql, pg в Node.js",
+            "Индексы, транзакции, нормализация данных",
+            "ORM Prisma: схема, миграции, CRUD-операции",
+            "NoSQL: документная модель MongoDB",
+            "MongoDB Atlas, Mongoose, схемы и модели",
+            "Агрегации и фильтрация в MongoDB",
+            "Сравнение SQL и NoSQL: когда что выбирать",
+            "Кэширование: Redis — основы использования"
+          ]
+        },
+        {
+          "id": "web-10",
+          "title": "HTTP & REST API",
+          "category": "Backend",
+          "description": "Протоколы, методы, статус-коды, авторизация (JWT)",
+          "topics": [
+            "HTTP: методы GET, POST, PUT, PATCH, DELETE",
+            "Статус-коды: 2xx, 3xx, 4xx, 5xx — значения",
+            "Заголовки запроса и ответа: Content-Type, Authorization",
+            "REST-принципы: ресурсы, единообразие, stateless",
+            "Проектирование REST API: именование эндпоинтов",
+            "Авторизация: JWT — структура токена, подпись, срок жизни",
+            "OAuth 2.0: Authorization Code, Client Credentials",
+            "HTTPS: TLS/SSL, сертификаты, Let's Encrypt",
+            "CORS: политика, заголовки, preflight-запрос",
+            "Тестирование API: Postman, Thunder Client"
+          ]
+        },
+        {
+          "id": "web-11",
+          "title": "Webpack & Vite",
+          "category": "Инструменты",
+          "description": "Сборка проекта, оптимизация, переменные окружения",
+          "topics": [
+            "Зачем нужны сборщики: модули, зависимости, бандлинг",
+            "Webpack: entry, output, loaders, plugins",
+            "Babel: транспиляция ES6+ в ES5",
+            "Обработка CSS: css-loader, style-loader, MiniCssExtractPlugin",
+            "Vite: быстрый dev-сервер, HMR, конфигурация vite.config.js",
+            "Переменные окружения: .env файлы, import.meta.env",
+            "Code splitting и lazy loading",
+            "Оптимизация бандла: tree-shaking, minification",
+            "Source maps для отладки",
+            "Деплой собранного проекта на Netlify / Vercel"
+          ]
+        },
+        {
+          "id": "web-12",
+          "title": "Тестирование",
+          "category": "Продвинутое",
+          "description": "Unit-тесты, Jest, Cypress, TDD-подход",
+          "topics": [
+            "Виды тестирования: unit, integration, e2e",
+            "Jest: установка, describe, test, expect, матчеры",
+            "Моки и стабы: jest.fn(), jest.mock()",
+            "Тестирование React-компонентов: React Testing Library",
+            "TDD: написание теста до кода",
+            "Coverage: покрытие кода тестами, отчёт",
+            "Cypress: установка, cy.visit, cy.get, cy.click",
+            "Cypress: перехват сетевых запросов, фикстуры",
+            "CI-интеграция: запуск тестов в GitHub Actions",
+            "Принципы FIRST для хороших тестов"
+          ]
+        },
+        {
+          "id": "web-13",
+          "title": "Docker & деплой",
+          "category": "Продвинутое",
+          "description": "Контейнеризация, CI/CD, Nginx, облачные платформы",
+          "topics": [
+            "Docker: образы, контейнеры, Dockerfile",
+            "Команды: build, run, ps, stop, exec, logs",
+            "docker-compose: многоконтейнерные приложения",
+            "Nginx: reverse proxy, обслуживание статики",
+            "CI/CD: GitHub Actions — workflow, jobs, steps",
+            "Переменные и секреты в GitHub Actions",
+            "Деплой на VPS: SSH, systemd, PM2",
+            "Облачные платформы: Railway, Render, Fly.io",
+            "Переменные окружения в продакшне",
+            "Мониторинг и логирование: UptimeRobot, Logtail"
+          ]
+        },
+        {
+          "id": "web-14",
+          "title": "Web Security",
+          "category": "Продвинутое",
+          "description": "XSS, CSRF, CORS, HTTPS, OAuth 2.0",
+          "topics": [
+            "XSS: типы атак, экранирование, Content Security Policy",
+            "CSRF: токены защиты, SameSite cookies",
+            "SQL Injection: параметризованные запросы, ORM",
+            "CORS: настройка на сервере, разрешённые origins",
+            "HTTPS: принцип работы TLS, Mixed Content",
+            "Хранение паролей: bcrypt, salt, никогда plaintext",
+            "Заголовки безопасности: HSTS, X-Frame-Options",
+            "Rate limiting и защита от брутфорса",
+            "Зависимости: npm audit, Dependabot",
+            "OWASP Top 10 — обзор основных угроз"
+          ]
+        }
+      ],
+      "salary": {
+        "junior": {
+          "min": 60000,
+          "max": 100000,
+          "avg": 80000
+        },
+        "middle": {
+          "min": 120000,
+          "max": 200000,
+          "avg": 160000
+        },
+        "senior": {
+          "min": 230000,
+          "max": 400000,
+          "avg": 300000
+        },
+        "currency": "₽",
+        "sources": "hh.ru, Habr Career 2024–2025",
+        "trend": "positive",
+        "trend_note": "Рост ~15–20% в год. Спрос на full-stack разработчиков стабильно высокий. К 2027 г. ожидается рост средней зарплаты на 40–50% из-за дефицита кадров.",
+        "forecast": [
+          {
+            "year": 2026,
+            "avg": 185000
+          },
+          {
+            "year": 2027,
+            "avg": 215000
+          },
+          {
+            "year": 2028,
+            "avg": 250000
+          }
+        ]
+      },
+      "companies": [
+        {
+          "name": "Яндекс",
+          "url": "https://yandex.ru/jobs"
+        },
+        {
+          "name": "VK",
+          "url": "https://team.vk.company"
+        },
+        {
+          "name": "Ozon",
+          "url": "https://job.ozon.ru"
+        },
+        {
+          "name": "Т-Банк",
+          "url": "https://tbank.ru/career/it"
+        },
+        {
+          "name": "Авито",
+          "url": "https://career.avito.com/vacancies/"
+        },
+        {
+          "name": "Wildberries",
+          "url": "https://hh.ru/employer/87021"
+        },
+        {
+          "name": "Сбер",
+          "url": "https://rabota.sber.ru/search"
+        },
+        {
+          "name": "Rambler",
+          "url": "https://rambler-co.ru/career"
+        }
+      ]
+    },
+    {
+      "id": "gamedev",
+      "code": "09.02.10",
+      "title": "Разработка компьютерных игр, AR и VR",
+      "description": "Создание игр и иммерсивных приложений дополненной и виртуальной реальности",
+      "color": "#ff6b35",
+      "icon": "img/icons8-game-controller-48.png",
+      "skills": [
+        {
+          "id": "game-1",
+          "title": "Основы программирования (C#)",
+          "category": "Основы",
+          "description": "Синтаксис, ООП, структуры данных, алгоритмы",
+          "topics": [
+            "Переменные, типы данных, константы",
+            "Условия: if/else, switch, тернарный оператор",
+            "Циклы: for, foreach, while, do-while",
+            "Методы: параметры, возвращаемый тип, перегрузка",
+            "ООП: классы, объекты, конструкторы",
+            "Наследование, полиморфизм, инкапсуляция",
+            "Интерфейсы и абстрактные классы",
+            "Массивы, List<T>, Dictionary<K,V>",
+            "Делегаты, события, лямбда-выражения",
+            "Обработка исключений: try, catch, finally"
+          ]
+        },
+        {
+          "id": "game-2",
+          "title": "Unity — интерфейс и сцены",
+          "category": "Основы",
+          "description": "Редактор, иерархия объектов, Inspector, Asset Store",
+          "topics": [
+            "Интерфейс редактора: Scene, Game, Hierarchy, Inspector, Project",
+            "Создание и сохранение сцен",
+            "Импорт ассетов: модели, текстуры, звуки",
+            "Asset Store: поиск, скачивание, установка пакетов",
+            "Prefab: создание, редактирование, применение изменений",
+            "Настройка камеры: проекция, Culling Mask, Viewport",
+            "Освещение: Directional Light, Point Light, Baked vs Realtime",
+            "Слои (Layers) и теги (Tags)",
+            "Настройки проекта: Quality, Physics, Input",
+            "Build Settings: целевая платформа, сборка проекта"
+          ]
+        },
+        {
+          "id": "game-3",
+          "title": "GameObjects & Components",
+          "category": "Основы",
+          "description": "Компонентная архитектура, Transform, Rigidbody",
+          "topics": [
+            "Компонентная модель Unity: GameObject как контейнер",
+            "Transform: позиция, вращение, масштаб в мировом и локальном пространстве",
+            "MonoBehaviour: Start, Update, Awake, OnEnable/Disable",
+            "GetComponent<T>() и кэширование ссылок",
+            "Rigidbody: масса, гравитация, ограничения",
+            "Методы движения: Transform.Translate vs Rigidbody.MovePosition",
+            "Instantiate и Destroy — создание и удаление объектов",
+            "SendMessage и прямые ссылки на компоненты",
+            "ScriptableObject — данные вне сцены",
+            "Coroutines: IEnumerator, yield return, WaitForSeconds"
+          ]
+        },
+        {
+          "id": "game-4",
+          "title": "Физика в Unity",
+          "category": "Механики",
+          "description": "Коллайдеры, физические материалы, Raycast",
+          "topics": [
+            "Коллайдеры: Box, Sphere, Capsule, Mesh Collider",
+            "Trigger vs Collider: OnTriggerEnter, OnCollisionEnter",
+            "Физические материалы: трение, упругость",
+            "Rigidbody: AddForce, AddTorque, velocity",
+            "Raycast: Physics.Raycast, RaycastHit, LayerMask",
+            "OverlapSphere и OverlapBox для зон",
+            "Physics 2D: Rigidbody2D, BoxCollider2D",
+            "Joints: HingeJoint, FixedJoint, SpringJoint",
+            "Physics.gravity и настройки физического движка",
+            "Оптимизация коллайдеров: статические vs кинематические"
+          ]
+        },
+        {
+          "id": "game-5",
+          "title": "Анимации",
+          "category": "Механики",
+          "description": "Animator, State Machine, blend trees, Timeline",
+          "topics": [
+            "Animation Clip: запись и редактирование ключевых кадров",
+            "Animator Controller: состояния и переходы",
+            "Параметры аниматора: bool, float, int, trigger",
+            "Blend Tree: 1D и 2D смешивание анимаций",
+            "Animator.SetBool / SetFloat / SetTrigger из кода",
+            "Avatar и Humanoid Rig для персонажей",
+            "Animation Rigging: IK, ограничения",
+            "Timeline: кат-сцены, последовательность событий",
+            "Animator Override Controller — замена клипов",
+            "Оптимизация: Culling Mode, Apply Root Motion"
+          ]
+        },
+        {
+          "id": "game-6",
+          "title": "UI/UX в играх",
+          "category": "Механики",
+          "description": "Canvas, HUD, меню, инвентарь, диалоги",
+          "topics": [
+            "Canvas: Screen Space Overlay, Camera, World Space",
+            "Основные UI-компоненты: Text, Image, Button, Slider, Toggle",
+            "TextMeshPro: форматирование, шрифты, Rich Text",
+            "RectTransform: привязки (anchors), pivot, stretch",
+            "Обработка событий: OnClick, EventSystem, IPointerHandler",
+            "Анимация UI: Animator, Tween-библиотеки (DOTween)",
+            "HUD: шкала здоровья, мини-карта, таймер",
+            "Главное меню и экран паузы",
+            "Система диалогов: Dialogue System или своя реализация",
+            "Локализация UI: поддержка нескольких языков"
+          ]
+        },
+        {
+          "id": "game-7",
+          "title": "Звук и музыка",
+          "category": "Механики",
+          "description": "Audio Source, Audio Mixer, 3D-звук, FMOD",
+          "topics": [
+            "AudioSource и AudioClip: воспроизведение, настройки",
+            "AudioListener: позиция в сцене",
+            "3D-звук: Min/Max Distance, Doppler, Rolloff",
+            "AudioMixer: группы, эффекты, Snapshot",
+            "Управление громкостью через Exposed Parameters",
+            "PlayOneShot vs Play — разница и применение",
+            "Музыкальные петли (loop) и кросс-фейд",
+            "FMOD Studio: интеграция с Unity, события",
+            "Звуковые зоны: AudioReverbZone",
+            "Оптимизация: сжатие аудио, Load Type"
+          ]
+        },
+        {
+          "id": "game-8",
+          "title": "Шейдеры и графика",
+          "category": "Визуал",
+          "description": "Shader Graph, материалы, постпроцессинг, VFX Graph",
+          "topics": [
+            "Материалы и шейдеры: Albedo, Normal Map, Metallic, Roughness",
+            "Shader Graph: нодовый редактор, UV, Time, Fresnel",
+            "URP и HDRP: различия и выбор рендер-пайплайна",
+            "Постпроцессинг: Bloom, Vignette, Color Grading, DOF",
+            "VFX Graph: системы частиц с GPU-ускорением",
+            "Particle System: эмиттеры, модули, сабэмиттеры",
+            "LOD (Level of Detail): настройка групп",
+            "Occlusion Culling: запекание и использование",
+            "Lightmap Baking: запечённое освещение",
+            "Оптимизация: Draw Calls, Batching, GPU Instancing"
+          ]
+        },
+        {
+          "id": "game-9",
+          "title": "AR-разработка",
+          "category": "AR/VR",
+          "description": "ARCore, ARKit, AR Foundation, маркерный трекинг",
+          "topics": [
+            "Основы AR: понятие якорей, плоскостей, трекинга",
+            "AR Foundation: кроссплатформенный API для Unity",
+            "ARCore (Android): требования к устройствам и сцене",
+            "ARKit (iOS): Face Tracking, Image Tracking",
+            "Обнаружение плоскостей: ARPlaneManager",
+            "Маркерный трекинг: AR Tracked Image Manager",
+            "Размещение объектов по касанию: Raycast на AR плоскости",
+            "Light Estimation: адаптация освещения под реальный мир",
+            "Occlusion: перекрытие виртуальных объектов реальными",
+            "Публикация AR-приложений в App Store и Google Play"
+          ]
+        },
+        {
+          "id": "game-10",
+          "title": "VR-разработка",
+          "category": "AR/VR",
+          "description": "XR Interaction Toolkit, Oculus SDK, контроллеры",
+          "topics": [
+            "Основы VR: стереорендеринг, FOV, IPD, комфорт",
+            "XR Interaction Toolkit: установка, настройка XR Rig",
+            "Отслеживание контроллеров: позиция, вращение, кнопки",
+            "Взаимодействие: Grab, Direct Interactor, Ray Interactor",
+            "Телепортация и плавное перемещение",
+            "Oculus SDK: OVRCameraRig, Oculus Input",
+            "SteamVR / OpenXR: кроссплатформенный стандарт",
+            "UI в VR: World Space Canvas, взаимодействие лазером",
+            "Производительность: Single Pass Rendering, Fixed Foveated",
+            "Тестирование без гарнитуры: XR Device Simulator"
+          ]
+        },
+        {
+          "id": "game-11",
+          "title": "Мультиплеер",
+          "category": "Продвинутое",
+          "description": "Netcode, Mirror, Photon, синхронизация состояния",
+          "topics": [
+            "Модели мультиплеера: P2P, клиент-сервер, выделенный сервер",
+            "Unity Netcode for GameObjects: NetworkObject, NetworkBehaviour",
+            "NetworkVariable: синхронизация переменных",
+            "ServerRpc и ClientRpc: вызов методов по сети",
+            "Mirror: альтернатива Netcode, SyncVar, Command, TargetRpc",
+            "Photon PUN 2: комнаты, матчмейкинг, PhotonView",
+            "Интерполяция и предсказание на клиенте",
+            "Авторитетный сервер: борьба с читами",
+            "Лобби и матчмейкинг: Unity Lobby Service",
+            "Relay Service: соединение без статического IP"
+          ]
+        },
+        {
+          "id": "game-12",
+          "title": "Оптимизация игр",
+          "category": "Продвинутое",
+          "description": "Profiler, батчинг, LOD, управление памятью",
+          "topics": [
+            "Unity Profiler: CPU, GPU, Memory, Rendering секции",
+            "Frame Debugger: анализ draw calls",
+            "Батчинг: Static Batching, Dynamic Batching, GPU Instancing",
+            "LOD Groups: настройка уровней детализации",
+            "Object Pooling: переиспользование объектов",
+            "Управление памятью: GC, избегание аллокаций в Update",
+            "Оптимизация скриптов: кэширование, сравнение алгоритмов",
+            "Сжатие текстур: ETC2, ASTC, атласы",
+            "Occlusion Culling и Frustum Culling",
+            "Цели производительности: 60 FPS, 90 FPS для VR"
+          ]
+        },
+        {
+          "id": "game-13",
+          "title": "Паттерны в геймдеве",
+          "category": "Продвинутое",
+          "description": "Observer, State Machine, ECS, Object Pool",
+          "topics": [
+            "Singleton: глобальный менеджер, риски и альтернативы",
+            "Observer / Event System: подписка на события",
+            "State Machine: состояния игрока, врага, UI",
+            "Command Pattern: отменяемые действия, реплей",
+            "Object Pool: пули, эффекты, частицы",
+            "Service Locator: альтернатива глобальным синглтонам",
+            "Component Pattern: разделение логики по компонентам",
+            "Data-Driven Design: конфигурация через ScriptableObject",
+            "ECS (Entity Component System): DOTS в Unity",
+            "MVC/MVP в UI: отделение данных от отображения"
+          ]
+        }
+      ],
+      "salary": {
+        "junior": {
+          "min": 55000,
+          "max": 90000,
+          "avg": 70000
+        },
+        "middle": {
+          "min": 110000,
+          "max": 190000,
+          "avg": 145000
+        },
+        "senior": {
+          "min": 200000,
+          "max": 380000,
+          "avg": 280000
+        },
+        "currency": "₽",
+        "sources": "hh.ru, Habr Career, DevGAMM 2024",
+        "trend": "positive",
+        "trend_note": "Геймдев в России растёт после ухода зарубежных студий. Специалисты по AR/VR особенно востребованы в промышленности и образовании. Прогноз роста — 20–25% в год.",
+        "forecast": [
+          {
+            "year": 2026,
+            "avg": 175000
+          },
+          {
+            "year": 2027,
+            "avg": 210000
+          },
+          {
+            "year": 2028,
+            "avg": 250000
+          }
+        ]
+      },
+      "companies": [
+        {
+          "name": "Lesta Games",
+          "url": "https://join.lesta.team/?ysclid=mmwhrcu113935549934"
+        },
+        {
+          "name": "VK Play",
+          "url": "https://team.vk.company"
+        },
+        {
+          "name": "Mundfish",
+          "url": "https://mundfish.com"
+        },
+        {
+          "name": "Pixonic",
+          "url": "https://pixonic.com"
+        },
+        {
+          "name": "Cyberia Nova",
+          "url": "https://cyberianova.ru"
+        },
+        {
+          "name": "1C Game Studios",
+          "url": "https://1cgs.net/jobs"
+        },
+        {
+          "name": "Astrum Entertainment",
+          "url": "https://astrum-entertainment.ru/"
+        },
+        {
+          "name": "ZiMAD",
+          "url": "https://zimad.com"
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "code": "09.02.13",
+      "title": "Интеграция решений с ИИ",
+      "description": "Применение технологий искусственного интеллекта в реальных продуктах и системах",
+      "color": "#a855f7",
+      "icon": "img/icons8-artificial-intelligence-brain-48.png",
+      "skills": [
+        {
+          "id": "ai-1",
+          "title": "Python для ИИ",
+          "category": "Основы",
+          "description": "Синтаксис, NumPy, Pandas, работа с данными",
+          "topics": [
+            "Синтаксис Python: переменные, условия, циклы, функции",
+            "Списки, словари, кортежи, множества",
+            "Comprehensions: list, dict, generator",
+            "ООП в Python: классы, наследование, магические методы",
+            "NumPy: массивы ndarray, операции, broadcasting",
+            "Pandas: DataFrame, Series, чтение CSV/Excel",
+            "Pandas: фильтрация, группировка, pivot, merge",
+            "Matplotlib / Seaborn: визуализация данных",
+            "Работа с файлами: json, csv, pickle",
+            "Виртуальные окружения: venv, pip, requirements.txt"
+          ]
+        },
+        {
+          "id": "ai-2",
+          "title": "Математика для ML",
+          "category": "Основы",
+          "description": "Линейная алгебра, статистика, теорвер, матанализ",
+          "topics": [
+            "Векторы и матрицы: операции, транспонирование, умножение",
+            "Скалярное произведение и косинусное сходство",
+            "Собственные значения и SVD (применение в PCA)",
+            "Производная и градиент: смысл для оптимизации",
+            "Градиентный спуск: learning rate, сходимость",
+            "Вероятность: вероятностное пространство, условная вероятность",
+            "Распределения: нормальное, Бернулли, Пуассона",
+            "Байесова теорема и наивный байесовский классификатор",
+            "Статистические метрики: среднее, дисперсия, корреляция",
+            "Функция потерь: MSE, Cross-Entropy, их производные"
+          ]
+        },
+        {
+          "id": "ai-3",
+          "title": "Классическое ML",
+          "category": "Машинное обучение",
+          "description": "Scikit-learn, регрессия, классификация, кластеризация",
+          "topics": [
+            "Виды обучения: supervised, unsupervised, reinforcement",
+            "Линейная и логистическая регрессия",
+            "Decision Tree и Random Forest",
+            "SVM: опорные векторы, ядра",
+            "K-Nearest Neighbors (KNN)",
+            "Кластеризация: K-Means, DBSCAN, иерархическая",
+            "Метрики качества: accuracy, precision, recall, F1, ROC-AUC",
+            "Переобучение и регуляризация: L1, L2, dropout",
+            "Cross-validation, train/val/test split",
+            "Scikit-learn: Pipeline, GridSearchCV, ColumnTransformer"
+          ]
+        },
+        {
+          "id": "ai-4",
+          "title": "Нейронные сети",
+          "category": "Машинное обучение",
+          "description": "Персептрон, CNN, RNN, принципы обратного распространения",
+          "topics": [
+            "Персептрон: веса, смещение, функция активации",
+            "Многослойный перцептрон (MLP): архитектура, forward pass",
+            "Функции активации: ReLU, sigmoid, tanh, softmax",
+            "Обратное распространение ошибки (backpropagation)",
+            "Оптимизаторы: SGD, Adam, RMSProp",
+            "Сверточные сети (CNN): Conv2D, Pooling, Flatten",
+            "Архитектуры CNN: LeNet, VGG, ResNet, MobileNet",
+            "Рекуррентные сети (RNN): LSTM, GRU, Bidirectional",
+            "Батч-нормализация и Dropout",
+            "Transfer Learning: заморозка слоёв, дообучение"
+          ]
+        },
+        {
+          "id": "ai-5",
+          "title": "TensorFlow / PyTorch",
+          "category": "Машинное обучение",
+          "description": "Фреймворки глубокого обучения, обучение моделей",
+          "topics": [
+            "TensorFlow / Keras: Sequential и Functional API",
+            "Компиляция модели: optimizer, loss, metrics",
+            "Callbacks: ModelCheckpoint, EarlyStopping, ReduceLROnPlateau",
+            "PyTorch: Tensor, autograd, torch.nn.Module",
+            "DataLoader и Dataset: загрузка и аугментация",
+            "Обучающий цикл PyTorch: forward, loss, backward, step",
+            "GPU-ускорение: .to('cuda'), DataParallel",
+            "Сохранение и загрузка моделей: .save(), .load()",
+            "TorchScript и ONNX: экспорт для продакшна",
+            "Hugging Face Transformers: готовые модели и pipeline"
+          ]
+        },
+        {
+          "id": "ai-6",
+          "title": "NLP & LLM",
+          "category": "Направления",
+          "description": "Обработка текста, трансформеры, работа с OpenAI/HuggingFace API",
+          "topics": [
+            "Предобработка текста: токенизация, стемминг, лемматизация",
+            "Векторизация: Bag of Words, TF-IDF",
+            "Word Embeddings: Word2Vec, GloVe, FastText",
+            "Архитектура Transformer: Attention, Multi-Head, Positional Encoding",
+            "BERT: предобучение, fine-tuning, применения",
+            "GPT-архитектура: авторегрессия, генерация текста",
+            "OpenAI API: chat completions, embeddings, function calling",
+            "Hugging Face: pipeline, AutoModel, Tokenizer",
+            "Prompt Engineering: system prompt, few-shot, chain-of-thought",
+            "RAG (Retrieval-Augmented Generation): принцип работы"
+          ]
+        },
+        {
+          "id": "ai-7",
+          "title": "Computer Vision",
+          "category": "Направления",
+          "description": "OpenCV, YOLO, сегментация, детекция объектов",
+          "topics": [
+            "OpenCV: чтение изображений, цветовые пространства, каналы",
+            "Фильтрация: размытие, резкость, морфологические операции",
+            "Обнаружение границ: Canny, Sobel",
+            "Детекция объектов: задача, метрики IoU, mAP",
+            "YOLO: архитектура, обучение, inference с Ultralytics",
+            "Сегментация: semantic vs instance, Mask R-CNN",
+            "Классификация изображений с pretrained-моделями",
+            "Аугментация данных: albumentations, torchvision.transforms",
+            "Разметка данных: LabelImg, Roboflow",
+            "Деплой CV-модели: ONNX Runtime, TensorRT"
+          ]
+        },
+        {
+          "id": "ai-8",
+          "title": "MLOps",
+          "category": "Интеграция",
+          "description": "Docker, FastAPI для ML, мониторинг моделей, CI/CD",
+          "topics": [
+            "FastAPI: создание REST-сервиса для ML-модели",
+            "Pydantic: валидация входных данных",
+            "Docker: контейнеризация ML-сервисов",
+            "Эксперименты и метрики: MLflow, Weights & Biases",
+            "Версионирование данных: DVC (Data Version Control)",
+            "CI/CD для ML: GitHub Actions, тесты модели",
+            "Мониторинг в продакшне: дрейф данных, деградация модели",
+            "Оркестрация: Airflow, Prefect — пайплайны данных",
+            "Облачные ML-платформы: AWS SageMaker, GCP Vertex AI",
+            "A/B тестирование моделей"
+          ]
+        },
+        {
+          "id": "ai-9",
+          "title": "Работа с API ИИ-сервисов",
+          "category": "Интеграция",
+          "description": "OpenAI, Anthropic, Stability AI, интеграция в продукты",
+          "topics": [
+            "OpenAI API: ключи, квоты, модели (GPT-4o, o1)",
+            "Chat Completions: роли system/user/assistant",
+            "Streaming-ответы: Server-Sent Events, чанки",
+            "Function Calling / Tool Use: схема, парсинг ответа",
+            "Embeddings API: получение векторов, применения",
+            "Anthropic Claude API: Messages API, системный промпт",
+            "Stability AI: генерация изображений, параметры",
+            "Обработка ошибок: rate limits, retry, exponential backoff",
+            "Стоимость и оптимизация токенов: подсчёт, кэширование",
+            "LangChain: цепочки, агенты, инструменты"
+          ]
+        },
+        {
+          "id": "ai-10",
+          "title": "Базы данных для ИИ",
+          "category": "Интеграция",
+          "description": "Векторные БД, Pinecone, Weaviate, embeddings",
+          "topics": [
+            "Векторные представления: что такое embedding, размерность",
+            "Поиск ближайших соседей: cosine similarity, HNSW, FAISS",
+            "Pinecone: создание индекса, upsert, query",
+            "Weaviate: схема, vectorizer, hybrid search",
+            "Chroma: локальная векторная БД для прототипов",
+            "pgvector: расширение PostgreSQL для векторов",
+            "Построение RAG-системы: embed → store → retrieve → generate",
+            "Chunking стратегии: по предложениям, по абзацам, overlap",
+            "Метаданные и фильтрация при поиске",
+            "Оценка качества retrieval: recall@k, MRR"
+          ]
+        },
+        {
+          "id": "ai-11",
+          "title": "Этика и безопасность ИИ",
+          "category": "Продвинутое",
+          "description": "Bias, fairness, explainability, регулирование ИИ",
+          "topics": [
+            "Источники предвзятости: данные, разметка, алгоритм",
+            "Метрики справедливости: demographic parity, equalized odds",
+            "Explainability: SHAP, LIME — интерпретация предсказаний",
+            "Privacy: дифференциальная приватность, федеративное обучение",
+            "Adversarial Attacks: атаки на модели и защита",
+            "AI Act (ЕС): категории риска, требования",
+            "Ответственный AI: принципы Google, Microsoft, Anthropic",
+            "Hallucination в LLM: причины и методы снижения",
+            "Prompt Injection и защита ИИ-приложений",
+            "Watermarking и детекция AI-контента"
+          ]
+        },
+        {
+          "id": "ai-12",
+          "title": "Fine-tuning моделей",
+          "category": "Продвинутое",
+          "description": "LoRA, PEFT, дообучение под задачи бизнеса",
+          "topics": [
+            "Когда нужен fine-tuning: vs RAG vs prompt engineering",
+            "Форматы данных для обучения: JSONL, instruction-tuning",
+            "OpenAI Fine-tuning API: загрузка данных, запуск",
+            "PEFT: Parameter-Efficient Fine-Tuning — обзор методов",
+            "LoRA: идея адаптеров, ранг, target modules",
+            "QLoRA: квантизация + LoRA для экономии памяти",
+            "Hugging Face Trainer: конфигурация, TrainingArguments",
+            "Оценка fine-tuned модели: перплексия, задачные метрики",
+            "Слияние адаптера с базовой моделью",
+            "Деплой fine-tuned модели: vLLM, Ollama, HF Inference"
+          ]
+        }
+      ],
+      "salary": {
+        "junior": {
+          "min": 80000,
+          "max": 130000,
+          "avg": 105000
+        },
+        "middle": {
+          "min": 160000,
+          "max": 280000,
+          "avg": 210000
+        },
+        "senior": {
+          "min": 300000,
+          "max": 600000,
+          "avg": 420000
+        },
+        "currency": "₽",
+        "sources": "hh.ru, Habr Career, Tinkoff/Сбер вакансии 2024–2025",
+        "trend": "strong_positive",
+        "trend_note": "Самая быстрорастущая специальность. Дефицит ML-инженеров и AI-интеграторов критический. Ожидаемый рост зарплат — 25–35% в год до 2028 г. Крупные банки и госкомпании активно переплачивают за специалистов.",
+        "forecast": [
+          {
+            "year": 2026,
+            "avg": 265000
+          },
+          {
+            "year": 2027,
+            "avg": 330000
+          },
+          {
+            "year": 2028,
+            "avg": 410000
+          }
+        ]
+      },
+      "companies": [
+        {
+          "name": "Яндекс",
+          "url": "https://yandex.ru/jobs"
+        },
+        {
+          "name": "Сбер",
+          "url": "https://rabota.sber.ru/search"
+        },
+        {
+          "name": "NtechLab",
+          "url": "https://ntechlab.ru/career"
+        },
+        {
+          "name": "Cognitive Pilot",
+          "url": "https://cognitivepilot.com/about-company/vacancies/"
+        },
+        {
+          "name": "Т-Банк",
+          "url": "https://tbank.ru/career/it"
+        },
+        {
+          "name": "VK",
+          "url": "https://team.vk.company"
+        },
+        {
+          "name": "MTS AI",
+          "url": "https://mts.ai/career/"
+        },
+        {
+          "name": "Авито",
+          "url": "https://career.avito.com/vacancies/"
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "code": "10.02.05",
+      "title": "Информационная безопасность",
+      "description": "Защита автоматизированных систем, анализ угроз и обеспечение кибербезопасности",
+      "color": "#22c55e",
+      "icon": "img/icons8-security-shield-48.png",
+      "skills": [
+        {
+          "id": "sec-1",
+          "title": "Основы сетей",
+          "category": "Основы",
+          "description": "Модель OSI, TCP/IP, DNS, HTTP, маршрутизация",
+          "topics": [
+            "Модель OSI: 7 уровней, функции каждого",
+            "Стек TCP/IP: Internet, Transport, Application",
+            "IP-адресация: IPv4, IPv6, маски подсетей, CIDR",
+            "Протоколы транспортного уровня: TCP vs UDP",
+            "DNS: A, AAAA, CNAME, MX, TXT записи, резолюция",
+            "HTTP/HTTPS: методы, заголовки, коды ответов",
+            "ARP, ICMP: ping, traceroute, обнаружение сети",
+            "Маршрутизация: статическая, динамическая (OSPF, BGP)",
+            "NAT: принципы работы, PAT",
+            "Wireshark: захват и анализ трафика"
+          ]
+        },
+        {
+          "id": "sec-2",
+          "title": "Операционные системы",
+          "category": "Основы",
+          "description": "Linux и Windows: администрирование, права, процессы",
+          "topics": [
+            "Файловая система Linux: иерархия, /etc, /var, /proc",
+            "Права доступа: rwx, chmod, chown, SUID/SGID/Sticky",
+            "Пользователи и группы: /etc/passwd, /etc/shadow",
+            "Процессы: ps, top, htop, kill, приоритеты (nice)",
+            "Systemd: юниты, systemctl, journalctl",
+            "Bash-скриптинг: переменные, условия, циклы, cron",
+            "Windows Active Directory: домены, пользователи, GPO",
+            "Реестр Windows: структура, редактирование, мониторинг",
+            "Windows Event Log: EventID, логи безопасности",
+            "PowerShell: основы для администрирования и аудита"
+          ]
+        },
+        {
+          "id": "sec-3",
+          "title": "Криптография",
+          "category": "Основы",
+          "description": "Симметричное/асимметричное шифрование, хэширование, PKI",
+          "topics": [
+            "Симметричное шифрование: AES (режимы CBC, GCM), ключи",
+            "Асимметричное шифрование: RSA, ECC, пара ключей",
+            "Хэш-функции: MD5, SHA-1, SHA-256, SHA-3 — применения",
+            "HMAC: аутентификация сообщений с ключом",
+            "Цифровая подпись: принцип, применение",
+            "PKI: CA, сертификаты X.509, цепочка доверия",
+            "TLS/SSL: handshake, сессионные ключи, SNI",
+            "Протоколы обмена ключами: Diffie-Hellman, ECDHE",
+            "Хранение паролей: bcrypt, Argon2, PBKDF2, rainbow tables",
+            "Атаки на криптографию: padding oracle, timing attack"
+          ]
+        },
+        {
+          "id": "sec-4",
+          "title": "Анализ уязвимостей",
+          "category": "Атака и защита",
+          "description": "OWASP Top 10, CVE, сканеры Nmap, Nessus",
+          "topics": [
+            "OWASP Top 10: Injection, Broken Auth, XSS и другие",
+            "CVE и CVSS: система оценки критичности уязвимостей",
+            "Nmap: сканирование портов, определение ОС и сервисов",
+            "Nessus / OpenVAS: автоматизированный анализ уязвимостей",
+            "Nikto: сканер веб-серверов",
+            "Разведка (Reconnaissance): OSINT, Shodan, theHarvester",
+            "Fingerprinting: баннеры, версии, технологии",
+            "Управление уязвимостями: жизненный цикл, патч-менеджмент",
+            "Bug Bounty: программы, правила раскрытия, платформы",
+            "Отчёт об уязвимости: структура, рекомендации по устранению"
+          ]
+        },
+        {
+          "id": "sec-5",
+          "title": "Пентестинг",
+          "category": "Атака и защита",
+          "description": "Методологии, Kali Linux, Metasploit, этичный хакинг",
+          "topics": [
+            "Методологии: PTES, OWASP Testing Guide, MITRE ATT&CK",
+            "Фазы пентеста: Разведка → Сканирование → Эксплуатация → Отчёт",
+            "Kali Linux: инструментарий, настройка среды",
+            "Metasploit: msfconsole, exploit, payload, meterpreter",
+            "Privilege Escalation: Linux (SUID, sudo) и Windows (UAC, tokens)",
+            "Password Attacks: Hydra, Hashcat, John the Ripper",
+            "Эксплуатация веб: SQLMap, Burp Suite, IDOR",
+            "Post-Exploitation: сбор учётных данных, persistence",
+            "Социальная инженерия: фишинг, претекстинг",
+            "Правовая сторона: договор, scope, responsible disclosure"
+          ]
+        },
+        {
+          "id": "sec-6",
+          "title": "Веб-безопасность",
+          "category": "Атака и защита",
+          "description": "SQL Injection, XSS, CSRF, Burp Suite",
+          "topics": [
+            "SQL Injection: UNION-based, blind, time-based, sqlmap",
+            "XSS: reflected, stored, DOM-based — векторы и защита",
+            "CSRF: токены, SameSite, Double Submit Cookie",
+            "SSRF: атака на внутренние сервисы через сервер",
+            "XXE: External Entity Injection в XML",
+            "IDOR: небезопасные прямые ссылки на объекты",
+            "Burp Suite: Proxy, Repeater, Intruder, Scanner",
+            "HTTP Request Smuggling: конфликт парсеров",
+            "Business Logic уязвимости: нарушения бизнес-логики",
+            "Secure Headers: CSP, HSTS, X-Frame-Options, практика"
+          ]
+        },
+        {
+          "id": "sec-7",
+          "title": "Сетевая безопасность",
+          "category": "Защита",
+          "description": "Firewall, IDS/IPS, VPN, сегментация сети",
+          "topics": [
+            "Межсетевые экраны (Firewall): stateful, stateless, правила",
+            "WAF (Web Application Firewall): ModSecurity, облачные WAF",
+            "IDS/IPS: Snort, Suricata — сигнатуры и правила",
+            "VPN: IPsec, OpenVPN, WireGuard — принципы и настройка",
+            "Сегментация сети: VLAN, DMZ, Zero Trust",
+            "802.1X: аутентификация устройств в сети",
+            "DDoS: типы атак, методы защиты, Cloudflare",
+            "Honeypot и Honeynet: ловушки для атакующих",
+            "Network Access Control (NAC)",
+            "SD-WAN и Zero Trust Network Access (ZTNA)"
+          ]
+        },
+        {
+          "id": "sec-8",
+          "title": "SIEM & мониторинг",
+          "category": "Защита",
+          "description": "Splunk, ELK Stack, анализ логов, реагирование на инциденты",
+          "topics": [
+            "Источники логов: Windows Event Log, syslog, NetFlow",
+            "ELK Stack: Elasticsearch, Logstash, Kibana — настройка",
+            "Splunk: поиск SPL, дашборды, алерты",
+            "SIEM-корреляция: правила, Use Cases, снижение False Positive",
+            "Индикаторы компрометации (IoC): хэши, IP, домены",
+            "MITRE ATT&CK: тактики, техники, маппинг алертов",
+            "Реагирование на инциденты (IR): фазы, playbook",
+            "Containment: изоляция хоста, блокировка аккаунта",
+            "Eradication & Recovery: устранение угрозы, восстановление",
+            "Post-Incident Review: разбор инцидента, улучшения"
+          ]
+        },
+        {
+          "id": "sec-9",
+          "title": "Защита ОС и хостов",
+          "category": "Защита",
+          "description": "Hardening, антивирусы, EDR, политики безопасности",
+          "topics": [
+            "Hardening Linux: отключение сервисов, AppArmor, SELinux",
+            "Hardening Windows: CIS Benchmark, отключение ненужных компонентов",
+            "Patch Management: автообновления, WSUS, жизненный цикл",
+            "Антивирусы и EPP: принципы работы, сигнатуры, поведение",
+            "EDR (Endpoint Detection & Response): CrowdStrike, Defender ATP",
+            "Application Whitelisting: AppLocker, WDAC",
+            "Полнодисковое шифрование: BitLocker, LUKS",
+            "Политики паролей и MFA: TOTP, FIDO2, YubiKey",
+            "Минимальные привилегии: PAM, Just-in-Time Access",
+            "Host-based IDS: OSSEC, Wazuh"
+          ]
+        },
+        {
+          "id": "sec-10",
+          "title": "Форензика",
+          "category": "Расследование",
+          "description": "Цифровая криминалистика, анализ артефактов, восстановление данных",
+          "topics": [
+            "Принципы форензики: целостность доказательств, chain of custody",
+            "Снятие образа диска: dd, FTK Imager, Autopsy",
+            "Файловые системы: NTFS артефакты, MFT, $LogFile",
+            "Анализ памяти: Volatility, дампы процессов, сетевые соединения",
+            "Анализ журналов Windows: Prefetch, Event Log, Registry Hives",
+            "Восстановление удалённых файлов: Recuva, PhotoRec",
+            "Анализ сетевого трафика: PCAP, Wireshark, NetworkMiner",
+            "Malware Analysis (статический): strings, PEStudio, VirusTotal",
+            "Malware Analysis (динамический): Any.Run, Cuckoo Sandbox",
+            "Составление отчёта о расследовании"
+          ]
+        },
+        {
+          "id": "sec-11",
+          "title": "Нормативная база",
+          "category": "Расследование",
+          "description": "ФСТЭК, ФСБ, 152-ФЗ, ISO 27001, GDPR",
+          "topics": [
+            "152-ФЗ «О персональных данных»: категории ПДн, обязанности",
+            "Приказы ФСТЭК: №17, №21, №239 — требования к ИС",
+            "Лицензирование ФСБ: криптография, ФСТЭКовская сертификация",
+            "ISO/IEC 27001: СУИБ, Annex A, сертификация",
+            "ISO/IEC 27002: практические меры контроля",
+            "GDPR: принципы, права субъектов, штрафы",
+            "PCI DSS: стандарт безопасности платёжных данных",
+            "NIST Cybersecurity Framework: Identify, Protect, Detect...",
+            "Оценка рисков: методологии, матрица рисков",
+            "Политика ИБ: структура, разработка, внедрение"
+          ]
+        },
+        {
+          "id": "sec-12",
+          "title": "SOC & Blue Team",
+          "category": "Продвинутое",
+          "description": "Центр мониторинга безопасности, threat hunting, playbooks",
+          "topics": [
+            "Структура SOC: уровни L1/L2/L3, роли аналитиков",
+            "Workflow обработки алертов: триаж, эскалация",
+            "Threat Intelligence: тактические, оперативные, стратегические",
+            "Threat Hunting: гипотезы, методологии, инструменты",
+            "SOAR: автоматизация реагирования, интеграции",
+            "Playbooks и Runbooks: написание, автоматизация",
+            "Purple Teaming: совместная работа Red и Blue Team",
+            "Threat Modelling: STRIDE, PASTA, Attack Tree",
+            "KPI для SOC: MTTD, MTTR, False Positive Rate",
+            "Построение внутреннего SOC vs MSSP"
+          ]
+        },
+        {
+          "id": "sec-13",
+          "title": "Red Team & APT",
+          "category": "Продвинутое",
+          "description": "Продвинутые атаки, lateral movement, persistence",
+          "topics": [
+            "Red Team vs Pentest: отличия, цели, продолжительность",
+            "MITRE ATT&CK: Tactics, Techniques, Procedures (TTP)",
+            "Initial Access: фишинг, эксплойты, supply chain",
+            "Lateral Movement: Pass-the-Hash, Kerberoasting, WMI",
+            "Persistence: Registry, Scheduled Tasks, DLL Hijacking",
+            "Defense Evasion: AMSI bypass, обфускация, Living off the Land",
+            "Command & Control (C2): Cobalt Strike, Sliver, Covenant",
+            "Exfiltration: DNS tunneling, стеганография",
+            "Имитация APT-группировок: Lazarus, APT28, Cozy Bear",
+            "Написание отчёта Red Team: Executive Summary, технические детали"
+          ]
+        }
+      ],
+      "salary": {
+        "junior": {
+          "min": 70000,
+          "max": 110000,
+          "avg": 90000
+        },
+        "middle": {
+          "min": 140000,
+          "max": 230000,
+          "avg": 180000
+        },
+        "senior": {
+          "min": 250000,
+          "max": 450000,
+          "avg": 340000
+        },
+        "currency": "₽",
+        "sources": "hh.ru, HeadHunter Аналитика, ФСТЭК вакансии 2024–2025",
+        "trend": "positive",
+        "trend_note": "После 2022 г. спрос на ИБ-специалистов вырос в 2,5 раза. Государственные и финансовые организации испытывают острый дефицит кадров. Рост зарплат — 18–22% в год.",
+        "forecast": [
+          {
+            "year": 2026,
+            "avg": 215000
+          },
+          {
+            "year": 2027,
+            "avg": 255000
+          },
+          {
+            "year": 2028,
+            "avg": 300000
+          }
+        ]
+      },
+      "companies": [
+        {
+          "name": "Касперский",
+          "url": "https://careers.kaspersky.ru"
+        },
+        {
+          "name": "Positive Technologies",
+          "url": "https://ptsecurity.com"
+        },
+        {
+          "name": "InfoTeCS",
+          "url": "https://career.infotecs.ru/vacancies/"
+        },
+        {
+          "name": "Газинформсервис",
+          "url": "https://www.gaz-is.ru/o-kompanii/kariera#karera-v-kompanii"
+        },
+        {
+          "name": "Curator",
+          "url": "https://curator.pro/company/vacancies/"
+        },
+        {
+          "name": "Сбер",
+          "url": "https://rabota.sber.ru/search"
+        },
+        {
+          "name": "BI.ZONE",
+          "url": "https://bi.zone/about/career/"
+        },
+        {
+          "name": "F.A.C.C.T.",
+          "url": "https://facct.ru/careers"
+        }
+      ]
+    }
+  ]
+}

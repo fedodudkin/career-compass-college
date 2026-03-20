@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roadmap — IT Roadmap</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="glow-orb glow-1"></div>
+<div class="glow-orb glow-2"></div>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo"><span class="dot"></span>IT ROADMAP</a>
+  <ul class="nav-links" id="primary-navigation">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="about.html">О сервисе</a></li>
+    <li><a href="roadmap.html">Roadmap</a></li>
+    <li><a href="form.html">Заявка</a></li>
+  </ul>
+  <button class="nav-burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="primary-navigation"><span></span><span></span><span></span></button>
+</nav>
+
+<nav class="breadcrumb" aria-label="Навигация">
+  <a href="index.html" class="breadcrumb-link">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M3 12L12 3l9 9M5 10v9a1 1 0 001 1h4v-5h4v5h4a1 1 0 001-1v-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    Главная
+  </a>
+  <span class="breadcrumb-sep" aria-hidden="true">/</span>
+  <span class="breadcrumb-current" aria-current="page">Roadmap</span>
+</nav>
+
+<main class="page">
+
+  <header class="page-header animate-on-reveal">
+    <p class="section-label">Дорожная карта</p>
+    <h1 class="section-title">Roadmap специальностей</h1>
+    <p class="section-subtitle" id="global-progress">Загрузка...</p>
+    <!-- Disclaimer: второстепенная информация, минимальный стиль -->
+    <p class="page-header-disclaimer" role="note">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.7"/>
+        <path d="M12 8v1M12 11v5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      </svg>
+      Учебные материалы подбираются студентом самостоятельно
+    </p>
+  </header>
+
+  <div id="filter-bar" class="filter-bar animate-on-reveal" style="--reveal-delay:80ms">
+    <!-- rendered by roadmap.js -->
+  </div>
+
+  <div id="roadmap-content" class="roadmap-content">
+    <!-- rendered by roadmap.js -->
+  </div>
+
+</main>
+
+<footer>
+  <div class="site-footer">
+    <span class="footer-text">© 2026 IT Roadmap — Курсовая работа</span>
+    <div class="footer-links">
+      <a href="about.html">О сервисе</a>
+      <a href="form.html">Обратная связь</a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ── Зарплатная модалка ── -->
+<div id="salary-modal" class="skill-modal salary-modal" role="dialog" aria-modal="true" aria-labelledby="sal-spec-title">
+  <button id="salary-close-btn" class="modal-close" aria-label="Закрыть">✕</button>
+
+  <div class="modal-header">
+    <span id="sal-spec-label" class="modal-spec-label"></span>
+    <span class="modal-category-badge" style="--modal-color:#888">Зарплаты в России</span>
+  </div>
+
+  <h2 id="sal-spec-title" class="modal-title"></h2>
+  <p id="sal-source" class="sal-source"></p>
+  <p class="sal-disclaimer">Данные обобщены по специальности в целом — без разбивки по конкретным должностям. Учитываются все профили: например, для веб-разработки усреднены frontend, backend и fullstack.</p>
+
+  <!-- Таблица уровней -->
+  <div class="sal-levels-table">
+    <div class="sal-row sal-row-head">
+      <span>Уровень</span><span>Минимум</span><span>Среднее</span><span>Максимум</span>
+    </div>
+    <div class="sal-row sal-row-junior">
+      <span class="sal-level-name">Junior</span>
+      <span id="sal-jun-min"></span>
+      <span id="sal-jun-avg" class="sal-avg"></span>
+      <span id="sal-jun-max"></span>
+    </div>
+    <div class="sal-row sal-row-middle">
+      <span class="sal-level-name">Middle</span>
+      <span id="sal-mid-min"></span>
+      <span id="sal-mid-avg" class="sal-avg sal-highlight"></span>
+      <span id="sal-mid-max"></span>
+    </div>
+    <div class="sal-row sal-row-senior">
+      <span class="sal-level-name">Senior</span>
+      <span id="sal-sen-min"></span>
+      <span id="sal-sen-avg" class="sal-avg"></span>
+      <span id="sal-sen-max"></span>
+    </div>
+  </div>
+
+  <!-- Прогноз -->
+  <div class="sal-forecast">
+    <div class="modal-topics-label">Прогноз роста средней зарплаты — уровень Middle</div>
+    <div id="sal-forecast-bars" class="sal-forecast-bars"></div>
+  </div>
+
+  <!-- Тренд-комментарий -->
+  <p id="sal-trend-note" class="sal-trend-note"></p>
+
+  <!-- Компании-работодатели -->
+  <div class="sal-companies">
+    <div class="modal-topics-label">Где работают специалисты</div>
+    <div id="sal-companies-list" class="sal-companies-list"></div>
+  </div>
+</div>
+
+<!-- ── Modal overlay ── -->
+<div id="modal-overlay" class="modal-overlay" aria-hidden="true"></div>
+
+<!-- ── Skill modal ── -->
+<div id="skill-modal" class="skill-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <button id="modal-close-btn" class="modal-close" aria-label="Закрыть">✕</button>
+
+  <div class="modal-header">
+    <span id="modal-spec-label" class="modal-spec-label"></span>
+    <span id="modal-category" class="modal-category-badge"></span>
+  </div>
+
+  <h2 id="modal-title" class="modal-title"></h2>
+  <p id="modal-description" class="modal-description"></p>
+
+  <!-- Список тем для изучения -->
+  <div class="modal-topics">
+    <div class="modal-topics-label">Темы для изучения</div>
+    <ul id="modal-topics-list" class="modal-topics-list"></ul>
+  </div>
+
+  <div class="modal-footer">
+    <button id="modal-toggle-btn" class="btn modal-action-btn">Отметить пройденным</button>
+  </div>
+</div>
+
+<script type="module" src="js/main.js"></script>
+<script type="module" src="js/roadmap.js"></script>
+
+</body>
+</html>
